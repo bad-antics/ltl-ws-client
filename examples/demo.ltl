@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_ws_client
+
+import std::io
+use ltl_ws_client as lib
+
+fn main() {
+    io::println("ltl_ws_client demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
